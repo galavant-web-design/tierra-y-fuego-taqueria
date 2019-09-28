@@ -1,38 +1,68 @@
 @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,700&display=swap&subset=latin-ext');
 
 html {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *, *:before, *:after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-  font-size: 16px;
-  font-family: 'Courgette', cursive;
-  color: #4A4A4A;
+    font-size: 16px;
+    color: #4A4A4A;
 }
 
 body {
-  height: 100vh;
-  width: 100vw;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main {
-  text-align: center;
+    text-align: center;
 }
 
 h1 {
-  font-size: 2rem;
-  color: #000000;
-  margin-bottom: 1.5rem;
+    font-family: 'Bungee', cursive;
+    font-size: 2.5rem;
+    color: #992C2E;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: 'Bungee', cursive;
+    font-size: 2.2rem;
+    color: #992C2E;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: 'Bungee', cursive;
+    font-size: 1.8rem;
+    color: #992C2E;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+
 }
 
 .logo {
-  height: 20rem;
+    height: 7rem;
+}
+
+
+.home-banner {
+    height: 20rem;
 }

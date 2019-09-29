@@ -40,6 +40,18 @@ nav a {
     text-decoration: none;
 }
 
+section {
+    padding: 6rem calc(50% - 30rem);
+}
+
+article {
+    display: flex;
+}
+
+article > :not(:last-child) {
+    margin-right: 4rem;
+}
+
 footer {
     color: white;
     background-color: #202020;
@@ -58,12 +70,16 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
+}
+
+p {
+    line-height: 1.2;
 }
 
 footer h2 {
@@ -98,4 +114,49 @@ footer h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#menu {
+    color: #992C2E;
+}
+
+#menu ul {
+    min-width: 12rem;
+}
+
+#menu li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+#menu p {
+    font-size: 1.3rem;
+}
+
+#menu a {
+    font-family: 'Bungee', sans-serif;
+    color: #992C2E;
+    text-decoration: none;
+}
+
+#hours {
+    background: linear-gradient(to right, #FFE057 40%, white 40%);
+}
+
+#hours h2 {
+    background-color: #992C2E;
+    color: white;
+    width: 27rem;
+    padding: 3rem 6rem;
+    margin-top: -2rem;
+    margin-left: 25%;
+}
+
+#hours ul {
+    color: #992C2E;
+    line-height: 2.5;
+    font-weight: bold;
+    text-align: right;
+
+    width: 27rem;
+    margin-left: 25%;
 }

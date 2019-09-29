@@ -103,8 +103,6 @@ footer h2 {
     width: 100%;
     height: 13rem;
     padding: 1.5rem;
-    background: linear-gradient(rgba(255, 224, 87, .8), rgba(255, 224, 87, .8)), url(images/fire.jpg) no-repeat center center;
-    background-size: cover, cover;
 
     font-family: 'Bungee', sans-serif;
     font-size: 1.8rem;
@@ -114,6 +112,29 @@ footer h2 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.flames {
+    background: linear-gradient(rgba(255, 224, 87, .8), rgba(255, 224, 87, .8)), url(images/fire.jpg) no-repeat center center;
+    background-size: cover, cover;
+}
+
+.yellow-background {
+    background-color: #FFE057;
+}
+
+.farm-to-plate {
+    width: 50%;
+    align-items: center;
+    background-color: #992C2E;
+}
+
+.farm-picnic {
+    width: 100%;
+}
+
+.badge-logo {
+    width: 20%;
 }
 
 #menu {
@@ -159,4 +180,8 @@ footer h2 {
 
     width: 27rem;
     margin-left: 25%;
+}
+
+#location h2 {
+    text-align: center;
 }

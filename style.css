@@ -80,11 +80,53 @@ h3 {
 
 p {
     line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+footer {
+    padding: 3rem 6rem;
 }
 
 footer h2 {
     color: white;
     font-family: 'Nunito Sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+footer a {
+    color: white;
+}
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+footer .links {
+    display: flex;
+}
+
+footer .links > div {
+    flex: 1;
+}
+
+.copyright {
+    text-align: center;
+    padding: 2rem;
+    color: #992C2E;
+    background-color: white;
+}
+
+.copyright a {
+    color: #992C2E;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
 }
 
 .logo {
@@ -129,31 +171,39 @@ footer h2 {
     background-color: #992C2E;
 }
 
-.farm-picnic {
-    width: 100%;
+#farm-to-plate {
+    background: url(images/farm-to-plate.jpg) no-repeat center center, linear-gradient(#992C2E, #992C2E);
+    background-size: contain, contain;
+    height: 31rem;
+}
+
+#farm-picnic {
+    background: url(images/farm-picnic.jpg) no-repeat bottom center;
+    background-size: cover;
+    height: 31rem;
 }
 
 .badge-logo {
     width: 20%;
 }
 
-#menu {
+#menus {
     color: #992C2E;
 }
 
-#menu ul {
+#menus ul {
     min-width: 12rem;
 }
 
-#menu li:not(:last-child) {
+#menus li:not(:last-child) {
     margin-bottom: 1rem;
 }
 
-#menu p {
+#menus p {
     font-size: 1.3rem;
 }
 
-#menu a {
+#menus a {
     font-family: 'Bungee', sans-serif;
     color: #992C2E;
     text-decoration: none;

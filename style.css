@@ -61,7 +61,10 @@ nav a {
 }
 
 section {
-    padding: 6rem calc(50% - 30rem);
+    padding: 6rem 1.5rem;
+    max-width: 60rem;
+    box-sizing: content-box;
+    margin: 0 auto;
 }
 
 article {
@@ -185,12 +188,6 @@ footer .links > div {
     background-color: #FFE057;
 }
 
-.farm-to-plate {
-    width: 50%;
-    align-items: center;
-    background-color: #992C2E;
-}
-
 #farm-to-plate {
     background: url(images/farm-to-plate.jpg) no-repeat center center, linear-gradient(#992C2E, #992C2E);
     background-size: contain, contain;
@@ -236,7 +233,7 @@ footer .links > div {
 #hours h2 {
     background-color: #992C2E;
     color: white;
-    width: 27rem;
+    max-width: 27rem;
     padding: 3rem 6rem;
     margin-top: -2rem;
     margin-left: 25%;
@@ -248,10 +245,26 @@ footer .links > div {
     font-weight: bold;
     text-align: right;
 
-    width: 27rem;
+    max-width: 27rem;
     margin-left: 25%;
 }
 
 #location h2 {
     text-align: center;
+}
+
+@media screen and (max-width: 660px) {
+    .logo {
+        height: inherit;
+        width: 100%;
+    }
+
+    #hours h2, #hours ul {
+        margin-left: 0;
+    }
+
+    footer {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
 }

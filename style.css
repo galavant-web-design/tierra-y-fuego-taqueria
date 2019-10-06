@@ -259,6 +259,10 @@ footer .links > div {
         width: 100%;
     }
 
+    #hours {
+        background: linear-gradient(to right, #FFE057 20%, white 20%);
+    }
+
     #hours h2, #hours ul {
         margin-left: 0;
     }

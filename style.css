@@ -24,6 +24,7 @@ body {
 
     background: rgba(153, 44, 46, .95);
     height: 3rem;
+    padding: 0 2rem;
     width: 100%;
 
     color: white;
@@ -33,8 +34,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#coming-soon a {
+    color: white;
 }
 
 header {
@@ -61,18 +67,30 @@ nav a {
 }
 
 section {
-    padding: 6rem 1.5rem;
-    max-width: 60rem;
-    box-sizing: content-box;
-    margin: 0 auto;
+    padding: 6rem calc(50% - 30rem);
+}
+
+@media screen and (max-width: 63rem) {
+    section {
+        padding: 6rem 1.5rem;
+    }
+}
+
+section img {
+    width: 100%;
+}
+
+section.contrast {
+    background-color: #992C2E;
+    color: white;
+}
+
+section.contrast a, section.contrast h1, section.contrast h2, section.contrast h3 {
+    color: white;
 }
 
 article {
-    display: flex;
-}
-
-article > :not(:last-child) {
-    margin-right: 4rem;
+    margin-bottom: 6rem;
 }
 
 footer {
@@ -102,8 +120,30 @@ h3 {
 }
 
 p {
-    line-height: 1.2;
+    line-height: 1.3;
     margin-bottom: 1rem;
+}
+
+button {
+    border-radius: 5px;
+    padding: .7rem 1.5rem;
+    background-color: #992C2E;
+
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+img.float {
+    width: 40%;
+    min-width: 20rem;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
 }
 
 footer {
@@ -133,6 +173,10 @@ footer .links > div {
     flex: 1;
 }
 
+.mobile-only {
+    display: none;
+}
+
 .copyright {
     text-align: center;
     padding: 2rem;
@@ -156,12 +200,36 @@ footer .links > div {
     height: 7rem;
 }
 
+.actions {
+    margin-top: 2.5rem;
+}
+
+.actions button {
+    margin-right: 2rem;
+}
+
+.actions a {
+    text-decoration: none;
+}
+
 .banner {
     background: url(images/tacos.jpg) no-repeat center center;
     background-size: cover;
 
     width: 100%;
     height: 30rem;
+}
+
+.banner.community {
+    background-image: url(images/farm-to-plate.jpg);
+    display: flex;
+    align-items: center;
+    padding-left: 5rem;
+}
+
+.banner.community h1 {
+    color: white;
+    font-size: 3rem;
 }
 
 .call-out {
@@ -233,7 +301,7 @@ footer .links > div {
 #hours h2 {
     background-color: #992C2E;
     color: white;
-    max-width: 27rem;
+    max-width: 39rem;
     padding: 3rem 6rem;
     margin-top: -2rem;
     margin-left: 25%;
@@ -253,10 +321,40 @@ footer .links > div {
     text-align: center;
 }
 
+.showcase {
+    display: flex;
+}
+
+.reference {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.reference:not(:last-child) {
+    margin-right: 3rem;
+}
+
 @media screen and (max-width: 660px) {
     .logo {
         height: inherit;
         width: 100%;
+    }
+
+    .mobile-only {
+        display: inherit;
+    }
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .actions button {
+        margin-bottom: 2rem;
+    }
+
+    .actions {
+        margin-bottom: -2rem;
     }
 
     #hours {
@@ -265,6 +363,10 @@ footer .links > div {
 
     #hours h2, #hours ul {
         margin-left: 0;
+    }
+
+    .reference:not(:last-child) {
+        margin-right: 1rem;
     }
 
     footer {

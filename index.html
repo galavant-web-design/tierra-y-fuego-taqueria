@@ -16,21 +16,26 @@
 </head>
 
 <body>
-
-<div id="coming-soon">Coming soon to Boulder!</div>
+<div id="coming-soon">
+    <span>
+    We're now open for <a href="catering.html">catering and events</a>! Our restaurant will open its doors in 2020!
+    </span>
+</div>
 
 <header>
-    <img class="logo" src="images/banner-logo.png" alt="Tierra y Fuego Taqueria Logo">
+    <a href="index.html">
+        <img class="logo" src="images/banner-logo.png" alt="Tierra y Fuego Taqueria Logo">
+    </a>
 
     <nav>
         <ul>
-            <li><a href="#hours">Hours</a></li>
-<!--            <li><a href="#location">Location</a></li>-->
-            <li><a href="#about">About</a></li>
-            <li><a href="#news">News</a></li>
-            <!--            <li><a href="#press">Press</a></li>-->
-            <!--            <li><a href="#catering">Catering</a></li>-->
-            <!--            <li><a href="#menus">Menus</a></li>-->
+            <li class="mobile-only"><a href="#">Home</a></li>
+            <li class="hide-mobile"><a href="#hours">Hours</a></li>
+            <li class="hide-mobile"><a href="#about">About</a></li>
+            <li><a href="story.html">Story</a></li>
+            <li class="hide-mobile"><a href="#news">News</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="catering.html">Catering</a></li>
         </ul>
     </nav>
 </header>
@@ -41,25 +46,17 @@
     <div class="call-out flames">A fusion of North and South Mexico, in North Boulder, Colorado.</div>
 
     <section id="menus">
-        <!--        <h2>Menus</h2>-->
-        <!---->
-        <!--        <article>-->
-        <!--            <ul>-->
-        <!--                <li><a href="#">Main Menu</a></li>-->
-        <!--                <li><a href="#">Catering</a></li>-->
-        <!--            </ul>-->
         <p>
             We make tacos with no frills. Just freshly-baked corn tortillas, grilled and smoked meats,
             onion and cilantro, scratch salsas, and a squeeze of lime.
         </p>
-        </article>
     </section>
 
     <section id="hours">
-        <h2>Future Hours</h2>
+        <h2>Future Restaurant Hours</h2>
 
         <ul>
-            <li>11am&mdash;7pm, Tuesday&mdash;Sunday</li>
+            <li>11am&mdash;8pm, Tuesday&mdash;Sunday</li>
             <li>Closed Monday</li>
             <li>Holiday hours vary</li>
         </ul>
@@ -69,37 +66,34 @@
 
     <div id="farm-to-plate"></div>
 
-<!--    <section id="location">-->
-<!--        <h2>Locations</h2>-->
+    <!--    <section id="location">-->
+    <!--        <h2>Locations</h2>-->
 
-<!--        <article>-->
-<!--            <div class="restaurant">-->
-<!--                <img class="badge-logo" src="images/badge-logo.png" alt="Tierra y Fuego Badge Logo"/>-->
-<!--                <h3>Restaurant</h3>-->
-<!--                <p>4550 Broadway, Unit C-3A Boulder, CO 80304 USA</p>-->
-<!--                <h4>Directions</h4>-->
-<!--            </div>-->
+    <!--        <article>-->
+    <!--            <div class="restaurant">-->
+    <!--                <img class="badge-logo" src="images/badge-logo.png" alt="Tierra y Fuego Badge Logo"/>-->
+    <!--                <h3>Restaurant</h3>-->
+    <!--                <p>4550 Broadway, Unit C-3A Boulder, CO 80304 USA</p>-->
+    <!--                <h4>Directions</h4>-->
+    <!--            </div>-->
 
-<!--            <div class="catering">-->
-<!--                <img class="badge-logo" src="images/badge-logo.png" alt="Tierra y Fuego Badge Logo"/>-->
-<!--                <h3>Food Truck Catering</h3>-->
-<!--                <p>Tacos 'n' Pops</p>-->
-<!--                <p>Brought to you by Tierra y Fuego and Big Top Pops</p>-->
-<!--                <h4><a href="#">Learn More</a></h4>-->
-<!--            </div>-->
-<!--        </article>-->
-<!--    </section>-->
+    <!--            <div class="catering">-->
+    <!--                <img class="badge-logo" src="images/badge-logo.png" alt="Tierra y Fuego Badge Logo"/>-->
+    <!--                <h3>Food Truck Catering</h3>-->
+    <!--                <p>Tacos 'n' Pops</p>-->
+    <!--                <p>Brought to you by Tierra y Fuego and Big Top Pops</p>-->
+    <!--                <h4><a href="#">Learn More</a></h4>-->
+    <!--            </div>-->
+    <!--        </article>-->
+    <!--    </section>-->
 
     <div class="call-out yellow-background">South-Mexican Style SALSA recipes meet North-Mexican style SMOKED
         MEATS.
     </div>
 
     <section id="about">
-        <!--        <div>-->
         <h2>About</h2>
-        <!--            <h3>Our Story</h3>-->
-        <!--            <h3>Team</h3>-->
-        <!--        </div>-->
+
         <div>
             <p>Tierra y Fuego takes its name from the elements essential to its authentic cuisine: Earth and Fire.
                 The result is straightforward Mexican food with elemental layers and a flavorful edge.</p>
@@ -203,23 +197,28 @@
     </section>
 
 </main>
-<footer class="footer">
+
+<footer>
     <div class="links">
         <div>
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#hours">Hours</a></li>
-<!--                <li><a href="#location">Location</a></li>-->
-                <li><a href="#about">About</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="index.html#">Home</a></li>
+                <li><a href="index.html#hours">Hours</a></li>
+                <!--                <li><a href="#location">Location</a></li>-->
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#news">News</a></li>
             </ul>
         </div>
 
         <div class="center">
             <h2>Contact Us</h2>
-            <p>4550 Broadway, Unit C-3A</p>
-            <p>Boulder, CO 80304</p>
+            <a href="https://goo.gl/maps/cbYpRfNRxyNkZ6p89">
+                <p>4550 Broadway, Unit C-3A</p>
+                <p>Boulder, CO 80304</p>
+            </a>
+
+            <p><a href="mailto:hola@tierrayfuegotaqueria.com">hola@tierrayfuegotaqueria.com</a></p>
         </div>
 
         <div class="right">
@@ -227,15 +226,17 @@
             <a href="https://www.facebook.com/Tierra-y-Fuego-Taqueria-490355161419372/?epa=SEARCH_BOX"><img
                 src="images/facebook.svg"
                 alt="facebook icon"></a>
-            <a href="https://www.instagram.com/tierrayfuegotaqueria/"><img src="images/instagram.svg"></a>
+            <a href="https://www.instagram.com/tierrayfuegotaqueria/"><img src="images/instagram.svg"
+                                                                           alt="instagram"></a>
         </div>
 
     </div>
 
 </footer>
+
 <div class="copyright">
     ©
-    <script>document.write(new Date().getFullYear())</script>,
+    <script>document.write(new Date().getFullYear())</script>
     Tierra y Fuego
     |
     Site by <a href="https://www.galavant.io">Galavant</a>

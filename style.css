@@ -21,6 +21,7 @@ body {
 #coming-soon {
     position: fixed;
     top: 0;
+    z-index: 1;
 
     background: rgba(153, 44, 46, .95);
     height: 3rem;

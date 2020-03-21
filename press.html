@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 
+    <link rel="prefetch" href="images/close.svg">
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -31,20 +33,23 @@
 </div>
 
 <header>
-    <a href="index.html">
-        <img class="logo" src="images/banner-logo.png" alt="Tierra y Fuego Taqueria Logo">
-    </a>
+    <div class="top">
+        <a href="index.html">
+            <img class="logo" src="images/banner-logo.png" alt="Tierra y Fuego Taqueria Logo">
+        </a>
 
-    <nav>
+        <div id="toggle"></div>
+    </div>
+
+    <nav id="menu">
         <ul>
             <li class="mobile-only"><a href="index.html">Home</a></li>
             <li class="hide-mobile"><a href="index.html#hours">Hours</a></li>
-            <li class="hide-mobile"><a href="index.html#about">About</a></li>
             <li><a href="story.html">Story</a></li>
             <li class="hide-mobile"><a href="index.html#news">News</a></li>
             <li class="highlighted"><a href="#">Press</a></li>
             <li><a href="catering.html">Catering</a></li>
-            <li><a href="food-truck-and-events.html">Food Truck and Events</a></li>
+            <li><a href="food-truck-and-events.html">Food Truck</a></li>
             <li><a href="private-events.html">Private Events</a></li>
         </ul>
     </nav>
@@ -147,5 +152,6 @@
     Site by <a href="https://www.galavant.io">Galavant</a>
 </div>
 
+<script src="app.js"></script>
 </body>
 </html>

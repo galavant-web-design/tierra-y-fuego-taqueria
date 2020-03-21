@@ -345,7 +345,50 @@ footer .links > div {
     margin-right: 3rem;
 }
 
+#toggle {
+    display: none;
+}
+
 @media screen and (max-width: 660px) {
+    #menu {
+        display: none;
+    }
+
+    #toggle {
+        display: block;
+        flex-shrink: 0;
+        margin-left: 2rem;
+        height: 20px;
+        width: 20px;
+        background: url("images/menu.svg") center center no-repeat;
+    }
+
+    #toggle.open {
+        background-image: url("images/close.svg");
+    }
+
+    header .top {
+        display: flex;
+        align-items: center;
+    }
+
+    #menu.open {
+        display: inherit;
+    }
+
+    #menu.open ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu.open li a {
+        display: flex;
+        height: 2.5rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
     .logo {
         height: inherit;
         width: 100%;

@@ -129,6 +129,10 @@ p {
     margin-bottom: 1rem;
 }
 
+a, a:visited {
+    color: #202020;
+}
+
 iframe {
     margin-bottom: 1.3rem;
 }
@@ -166,7 +170,7 @@ footer h2 {
     font-size: 1.2rem;
 }
 
-footer a {
+footer a, footer a:visited {
     color: white;
 }
 
@@ -308,23 +312,29 @@ footer .links > div {
     background: linear-gradient(to right, #FFE057 40%, white 40%);
 }
 
+#hours > * {
+    margin-left: 25%;
+}
+
 #hours h2 {
     background-color: #992C2E;
     color: white;
     max-width: 39rem;
     padding: 3rem 6rem;
     margin-top: -2rem;
-    margin-left: 25%;
 }
 
-#hours ul {
+#hours ul, #hours .prominent {
     color: #992C2E;
     line-height: 2.5;
     font-weight: bold;
     text-align: right;
 
     max-width: 27rem;
-    margin-left: 25%;
+}
+
+.prominent {
+    font-size: 1.5rem;
 }
 
 #location h2 {
@@ -414,7 +424,7 @@ footer .links > div {
         background: linear-gradient(to right, #FFE057 20%, white 20%);
     }
 
-    #hours h2, #hours ul {
+    #hours > * {
         margin-left: 0;
     }
 

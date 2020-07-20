@@ -55,6 +55,7 @@ nav {
 
 nav ul {
     display: flex;
+    align-items: center;
 }
 
 nav li {
@@ -65,6 +66,16 @@ nav a, nav a:visited {
     font-family: 'Bungee', sans-serif;
     color: #992C2E;
     text-decoration: none;
+}
+
+nav a.action, nav a.action:visited {
+    color: white;
+    background-color: #424242;
+
+    display: inline-block;
+    padding: .5rem .7rem;
+    border-radius: 3px;
+    letter-spacing: 1px;
 }
 
 nav .highlighted a {

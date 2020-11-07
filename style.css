@@ -382,6 +382,14 @@ footer .links > div {
         display: none;
     }
 
+    header {
+        padding-bottom: .75rem;
+    }
+
+    nav a.action {
+        margin-bottom: .75rem;
+    }
+
     #toggle {
         display: block;
         flex-shrink: 0;

@@ -335,13 +335,13 @@ footer .links > div {
     margin-top: -2rem;
 }
 
-#hours ul, #hours .prominent {
+#hours .prominent {
     color: #992C2E;
     line-height: 2.5;
     font-weight: bold;
     text-align: right;
 
-    max-width: 27rem;
+    max-width: 39rem;
 }
 
 .prominent {
